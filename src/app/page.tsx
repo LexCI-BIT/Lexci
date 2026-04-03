@@ -82,7 +82,7 @@ export default function Home() {
               Services
             </Link>
             <Link
-              href="#start"
+              href="/contact"
               className="px-5 py-2.5 rounded-full text-black text-sm font-medium uppercase bg-gradient-to-r from-[hsl(220,70%,78%)] to-[hsl(40,80%,82%)] hover:opacity-90 transition-all"
             >
               Get Started
@@ -120,10 +120,12 @@ export default function Home() {
               {/* Menu Links */}
               <div className="flex-1 flex flex-col justify-center px-6 md:px-[120px]">
                 {[
-                  { label: "Platform", href: "#platform", children: [
-                    { label: "Cybersecurity", href: "/platform/cybersecurity" },
-                    { label: "InMind AI", href: "/platform/inmind" },
-                  ]},
+                  {
+                    label: "Platform", href: "#platform", children: [
+                      { label: "Cybersecurity", href: "/platform/cybersecurity" },
+                      { label: "InMind AI", href: "/platform/inmind" },
+                    ]
+                  },
                   { label: "Services", href: "#services" },
                   { label: "Capabilities", href: "/capabilities" },
                   { label: "Clients", href: "/clients" },
